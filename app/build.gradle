@@ -16,9 +16,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    lintOptions{
-        abortOnError false
-    }
     defaultConfig {
         applicationId "com.example.moviecataloge"
         minSdkVersion 21
@@ -33,17 +30,18 @@ android {
     }
 
     buildTypes {
-
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-
         }
     }
     testOptions {
         animationsDisabled = true
     }
     dynamicFeatures = [':movies', ':tvshows', ':favorite', ':detail']
+    lintOptions{
+        abortOnError false
+    }
 }
 
 dependencies {

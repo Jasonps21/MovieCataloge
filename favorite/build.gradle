@@ -8,9 +8,6 @@ apply from: '../shared_dependencies.gradle'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
-    lintOptions{
-        abortOnError false
-    }
     defaultConfig {
         applicationId "com.example.moviecatalogue.favorite"
         minSdkVersion 21
@@ -36,6 +33,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    lintOptions{
+        abortOnError false
     }
 }
 

@@ -9,9 +9,6 @@ apply from: '../shared_dependencies.gradle'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
-    lintOptions{
-        abortOnError false
-    }
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 30
@@ -37,6 +34,9 @@ android {
     }
     buildFeatures {
         viewBinding = true
+    }
+    lintOptions{
+        abortOnError false
     }
 }
 

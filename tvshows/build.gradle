@@ -8,9 +8,6 @@ apply from: '../shared_dependencies.gradle'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
-    lintOptions{
-        abortOnError false
-    }
     defaultConfig {
         applicationId "com.example.moviecatalogue.tvshow"
         minSdkVersion 21
@@ -37,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    lintOptions{
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -45,7 +45,7 @@ dependencies {
     implementation project(":base")
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestImplementation 'androidx.annotation:annotation:1.1.0'
