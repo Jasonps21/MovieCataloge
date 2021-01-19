@@ -8,12 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.moviecatalogue.favorite.R
 import kotlinx.android.synthetic.main.fragment_favorite_tvshow.*
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.koin.android.viewmodel.ext.android.viewModel
 
-
+@ExperimentalCoroutinesApi
 class FavoriteTvshowFragment : Fragment() {
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
